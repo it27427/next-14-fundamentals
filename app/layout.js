@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import './globals.css';
 
 export const metadata = {
@@ -8,7 +9,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body className='bg-slate-300' suppressHydrationWarning={true}>
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 };
