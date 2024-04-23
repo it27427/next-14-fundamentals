@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 
 const blogs = [
   {
@@ -31,7 +31,17 @@ const blogs = [
 const BlogsPage = () => {
   return (
     <>
-      <h1>Blogs Page</h1>
+      <div className='flex flex-col gap-4'>
+        <h1 className='font-bold'>My Blogs</h1>
+
+        <div className='flex flex-col gap-6'>
+          {blogs.map((blog) => (
+            <Link href={`blogs/${blog.id}`} key={blog.id}>
+              {blog.title}
+            </Link>
+          ))}
+        </div>
+      </div>
     </>
   );
 };

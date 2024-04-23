@@ -1,10 +1,13 @@
 const BlogDetails = ({ params }) => {
-  const { id } = params;
+  const { id, title, description } = params;
 
   return (
     <>
-      <h1>Blog Details</h1>
-      <h4>Blog Number is {id}</h4>
+      <div className='flex flex-col gap-3'>
+        <h1 className='text-xl font-bold'>This is blog {id}</h1>
+        {/* <h1 className='text-xl font-bold'>{title}</h1>
+        <p>{description}</p> */}
+      </div>
     </>
   );
 };
