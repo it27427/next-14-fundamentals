@@ -23,7 +23,7 @@ const Header = () => {
                 className={`${
                   pathname === '/'
                     ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block hover:bg-indigo-900'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
                 }`}
               >
                 Home
@@ -35,7 +35,7 @@ const Header = () => {
                 className={`${
                   pathname === '/about'
                     ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block hover:bg-indigo-900'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
                 }`}
               >
                 About
@@ -47,7 +47,7 @@ const Header = () => {
                 className={`${
                   pathname === '/blogs'
                     ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block hover:bg-indigo-900'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
                 }`}
               >
                 Blogs
@@ -59,7 +59,7 @@ const Header = () => {
                 className={`${
                   pathname === '/contact'
                     ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block hover:bg-indigo-900'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
                 }`}
               >
                 Contact
