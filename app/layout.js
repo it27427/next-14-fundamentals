@@ -17,6 +17,7 @@ const RootLayout = ({ children }) => {
     <html lang='en'>
       <body className='bg-slate-300' suppressHydrationWarning={true}>
         <main>{children}</main>
+        {console.log(pathName)}
         {console.log(pathName === '/*')}
         {pathName !== '/*' && <Footer />}
       </body>
