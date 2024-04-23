@@ -20,7 +20,9 @@ const RootLayout = ({ children }) => {
     <html lang='en'>
       <body className='bg-slate-300' suppressHydrationWarning={true}>
         <Header />
-        <main>{children}</main>
+        <main className='min-h-screen p-6'>
+          <div className='container'>{children}</div>
+        </main>
         <Footer />
 
         {/* {router !== '*' && } */}
