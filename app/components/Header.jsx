@@ -16,14 +16,14 @@ const Header = () => {
             NextBlog
           </Link>
 
-          <ul className='flex items-center gap-3'>
+          <ul className='flex items-center gap-1'>
             <li>
               <Link
                 href='/'
                 className={`${
                   pathname === '/'
-                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
+                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block rounded-md'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900 rounded-md'
                 }`}
               >
                 Home
@@ -34,8 +34,8 @@ const Header = () => {
                 href='/about'
                 className={`${
                   pathname === '/about'
-                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
+                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block rounded-md'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900 rounded-md'
                 }`}
               >
                 About
@@ -46,8 +46,8 @@ const Header = () => {
                 href='/blogs'
                 className={`${
                   pathname === '/blogs'
-                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
+                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block rounded-md'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900 rounded-md'
                 }`}
               >
                 Blogs
@@ -58,8 +58,8 @@ const Header = () => {
                 href='/contact'
                 className={`${
                   pathname === '/contact'
-                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block'
-                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900'
+                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block rounded-md'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900 rounded-md'
                 }`}
               >
                 Contact
