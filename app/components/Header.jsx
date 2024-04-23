@@ -10,16 +10,24 @@ const Header = () => {
 
           <ul className='flex items-center gap-3'>
             <li>
-              <Link href='/'>Home</Link>
+              <Link href='/' className='text-white'>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href='/about'>About</Link>
+              <Link href='/about' className='text-white'>
+                About
+              </Link>
             </li>
             <li>
-              <Link href='/blogs'>Blogs</Link>
+              <Link href='/blogs' className='text-white'>
+                Blogs
+              </Link>
             </li>
             <li>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/contact' className='text-white'>
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

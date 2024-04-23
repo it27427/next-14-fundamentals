@@ -1,6 +1,7 @@
 'use client';
 
 import Footer from './components/Footer';
+import Header from './components/Header';
 import './globals.css';
 
 import { useRouter } from 'next/compat/router';
@@ -18,8 +19,11 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
       <body className='bg-slate-300' suppressHydrationWarning={true}>
+        <Header />
         <main>{children}</main>
-        {/* {router !== '*' && <Footer />} */}
+        <Footer />
+
+        {/* {router !== '*' && } */}
       </body>
     </html>
   );
