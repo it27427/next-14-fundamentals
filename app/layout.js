@@ -3,6 +3,7 @@
 import Footer from './components/Footer';
 import './globals.css';
 
+import { useRouter } from 'next/compat/router';
 import { usePathname } from 'next/navigation';
 
 // export const metadata = {
@@ -11,15 +12,14 @@ import { usePathname } from 'next/navigation';
 // };
 
 const RootLayout = ({ children }) => {
-  const pathName = usePathname();
+  // const pathName = usePathname();
+  const router = useRouter();
 
   return (
     <html lang='en'>
       <body className='bg-slate-300' suppressHydrationWarning={true}>
         <main>{children}</main>
-        {console.log(pathName)}
-        {console.log(pathName === '/*')}
-        {pathName !== '/*' && <Footer />}
+        {/* {router !== '*' && <Footer />} */}
       </body>
     </html>
   );
