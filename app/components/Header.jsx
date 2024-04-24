@@ -55,6 +55,18 @@ const Header = () => {
             </li>
             <li>
               <Link
+                href='/posts'
+                className={`${
+                  pathname === '/posts'
+                    ? 'bg-indigo-900 text-white py-3 px-5 inline-block rounded-md'
+                    : 'text-white py-3 px-5 inline-block transition-all hover:bg-indigo-900 rounded-md'
+                }`}
+              >
+                Posts
+              </Link>
+            </li>
+            <li>
+              <Link
                 href='/contact'
                 className={`${
                   pathname === '/contact'
