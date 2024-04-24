@@ -10,7 +10,7 @@ const PostPage = async () => {
 
       <div className='flex flex-col gap-3'>
         {posts.map((post) => (
-          <Link href={`/posts/${id}`} key={post.id}>
+          <Link href={`/posts/${post.id}`} key={post.id}>
             {post.title}
           </Link>
         ))}
