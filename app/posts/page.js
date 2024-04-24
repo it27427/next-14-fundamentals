@@ -6,7 +6,7 @@ const PostPage = async () => {
 
   return (
     <div className='flex flex-col gap-4'>
-      <h1>All Posts</h1>
+      <h1 className='text-3xl'>All Posts</h1>
 
       <div className='flex flex-col gap-3'>
         {posts.map((post) => (
