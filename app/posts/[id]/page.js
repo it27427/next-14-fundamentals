@@ -1,5 +1,7 @@
+import Comments from '@/app/components/Comments';
 import getPost from '@/app/lib/getPost';
 import getPostComments from '@/app/lib/getPostComments';
+import { Suspense } from 'react';
 
 export async function generateMetadata({ params }) {
   const { id } = params;
@@ -16,7 +18,9 @@ const PostDetails = async ({ params }) => {
   const postPromise = getPost(id);
   const commentsPromise = getPostComments(id);
 
-  const [post, comments] = await Promise.all([postPromise, commentsPromise]);
+  const post = await postPromise;
+
+  // const [post, comments] = await Promise.all([postPromise, commentsPromise]);
 
   return (
     <div className='flex flex-col gap-6'>
@@ -27,20 +31,9 @@ const PostDetails = async ({ params }) => {
 
       <hr className='border-violet-500' />
 
-      <div className='flex flex-col gap-4'>
-        <h2 className='font-bold text-2xl text-neutral-700'>Comments</h2>
-
-        <ul className='flex flex-col gap-3'>
-          {comments.map((comment) => (
-            <li key={comment.id} className='flex flex-col gap-2'>
-              <span className='inline-block font-semibold text-violet-500'>
-                {comment.name}
-              </span>
-              <span>{comment.body}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Suspense fallback='<h3>Loading Comments...</h3>'>
+        <Comments promise={commentsPromise} />
+      </Suspense>
     </div>
   );
 };
