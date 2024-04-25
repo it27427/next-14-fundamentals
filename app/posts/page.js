@@ -20,11 +20,3 @@ const PostPage = async () => {
 };
 
 export default PostPage;
-
-export async function generateStaticParams() {
-  const posts = await getAllPosts();
-
-  return posts.map((post) => ({
-    id: post.id.toString(),
-  }));
-}
