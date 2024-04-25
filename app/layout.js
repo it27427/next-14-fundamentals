@@ -1,6 +1,8 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
 
+import './globals.css';
+
 export const metadata = {
   title: 'Next Fundamentals',
   description: 'Learning next.js fundamentals',
