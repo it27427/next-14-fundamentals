@@ -25,7 +25,7 @@ const BlogsPage = async () => {
   return (
     <>
       <div className='flex flex-col gap-4'>
-        <h1 className='font-bold'>My Blogs</h1>
+        <h1 className='font-bold text-3xl'>My Blogs</h1>
 
         <div className='flex flex-col gap-3'>
           {blogs.map((blog) => (
