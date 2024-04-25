@@ -13,7 +13,3 @@ const BlogDetails = ({ params, title, description }) => {
 };
 
 export default BlogDetails;
-
-export async function generateStaticParams() {
-  // do something
-}
