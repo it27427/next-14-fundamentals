@@ -6,7 +6,7 @@ const PostDetails = async ({ params }) => {
 
   return (
     <div className='flex flex-col gap-4'>
-      <h1 className='font-bold text-3xl'>{post.title}</h1>
+      <h1 className='font-bold text-3xl text-indigo-500'>{post.title}</h1>
       <p>{post.body}</p>
     </div>
   );
